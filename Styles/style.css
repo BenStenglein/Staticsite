@@ -1,24 +1,37 @@
 header{
     background-color:red;
-    grid-area: head;
     height:100px;
+    width: 100%;
+    text-align: center;
 }
 nav{
     background-color: slategray;
     width:100%;
-    grid-area: nav;
 }
 content{
     background-image:url("/Assets/images/pizza_pie1.jpg");
     background-position: center;
     display: flex;
     justify-content: center;
-    grid-area: content;
-    height: 100vh;
+}
+image1{
+    grid-area:img1;
+    background-color: aqua;
+}
+text1{
+    grid-area:text1;
+}
+image2{
+    grid-area:img2;
+}
+text2{
+    grid-area:text2;
+}
+text3{
+    grid-area:block;
 }
 footer{
     background-color: blueviolet;
-    grid-area: foot;
 }
 .container{
     display:flex;
@@ -43,26 +56,29 @@ footer{
     border-radius: 8px;
     border: solid 5px sienna;
 }
-/* body{
-    display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 4fr;
-    grid-template-areas:
-    "head"
-    "nav"
-    "content"
-    "foot";
-} */
+body{
+    height: 100vh;
+    background-color: blue;
+} 
 #content{
     align-self: center-top;
     background-color: aliceblue;
     text-align: center;
     width:60%;
     overflow:auto;
+    height: 100vh;
+    display: grid;
+     grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "img1 text1"
+    "block block"
+    "text2 img2"
+    ;
 }
 p{
-    margin-top:588px;
-    margin-bottom:588px;
+    /* margin-top:588px;
+    margin-bottom:588px; */
 }
 .bar_item:hover{
     filter:brightness(80%);
