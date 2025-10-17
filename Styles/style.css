@@ -13,22 +13,43 @@ content{
     background-position: center;
     display: flex;
     justify-content: center;
+    
 }
-image1{
+#image1{
     grid-area:img1;
-    background-color: aqua;
 }
-text1{
+#img1{
+    border-radius: 5px;
+    margin:5px;
+}
+img{
+    width:100%;
+}
+#text1{
     grid-area:text1;
 }
-image2{
+.maintext{
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+.maintext p{
+    font-size: 20px;
+    padding:10px;
+}
+#image2 img{
+    height:75%;
+    width:98%;
+    border-radius: 5px;
+    margin:5px;
+    
+}
+#image2{
     grid-area:img2;
+    
 }
-text2{
+#text2{
     grid-area:text2;
-}
-text3{
-    grid-area:block;
 }
 footer{
     background-color: blueviolet;
@@ -47,6 +68,7 @@ footer{
     border: solid 5px sienna;
     margin: 5px;
 }
+
 #logo{
     background-color: orange;
     padding: 5px;
@@ -69,12 +91,11 @@ body{
     height: 100vh;
     display: grid;
      grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "img1 text1"
-    "block block"
-    "text2 img2"
-    ;
+    "text2 img2";
+
 }
 p{
     /* margin-top:588px;
