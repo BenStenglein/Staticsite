@@ -1,8 +1,17 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+h1{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
 header{
     background-color:red;
     height:100px;
     width: 100%;
     text-align: center;
+    margin:0px;
 }
 nav{
     background-color: slategray;
@@ -81,6 +90,7 @@ footer{
 body{
     height: 100vh;
     background-color: blue;
+    margin: 0px;
 } 
 #content{
     align-self: center-top;
