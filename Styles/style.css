@@ -20,6 +20,7 @@ nav{
 content{
     background-image:url("/Assets/images/pizza_pie1.jpg");
     background-position: center;
+    background-size: contain;
     display: flex;
     justify-content: center;
     
@@ -105,7 +106,6 @@ body{
     grid-template-areas:
     "img1 text1"
     "text2 img2";
-
 }
 p{
     /* margin-top:588px;
