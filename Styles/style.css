@@ -8,17 +8,25 @@ h1{
 }
 header{
     background-color:red;
-    height:100px;
+    height:40px;
     width: 100%;
     text-align: center;
     margin:0px;
+
+}
+#logo{
+    width:30px;
+    padding: 0px;
+}
+#logo img{
+    border-radius: 20px;
 }
 nav{
     background-color: slategray;
     width:100%;
 }
 content{
-    background-image:url("/Assets/images/pizza_pie1.jpg");
+    background-image:url("/Assets/images/pizza_pie1-Photoroom.png");
     background-position: center;
     background-size: contain;
     display: flex;
@@ -28,7 +36,7 @@ content{
 #image1{
     grid-area:img1;
 }
-#img1{
+#content img{
     border-radius: 5px;
     margin:5px;
 }
@@ -47,7 +55,7 @@ img{
     font-size: 20px;
     padding:10px;
 }
-#image2 img{
+.img img{
     height:75%;
     width:98%;
     border-radius: 5px;
@@ -56,13 +64,12 @@ img{
 }
 #image2{
     grid-area:img2;
-    
 }
 #text2{
     grid-area:text2;
 }
 footer{
-    background-color: blueviolet;
+    background-color: #ccd4db;
 }
 .container{
     display:flex;
@@ -78,7 +85,29 @@ footer{
     border: solid 5px sienna;
     margin: 5px;
 }
-
+footer img{
+    height:100px;
+    width:100px;
+    float: left;
+    margin:5px;
+    border-radius:5px;
+}
+footer h2{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
+.table {
+    align-items: center;
+    text-align: center;
+    display:flex;
+    justify-content:space-around;
+}
+td{
+    padding:5px;
+    text-decoration: none;
+}
 #logo{
     background-color: orange;
     padding: 5px;
@@ -90,12 +119,12 @@ footer{
 }
 body{
     height: 100vh;
-    background-color: blue;
+    background-color: #afc7db;
     margin: 0px;
 } 
 #content{
     align-self: center-top;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     text-align: center;
     width:60%;
     overflow:auto;
@@ -105,7 +134,14 @@ body{
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "img1 text1"
-    "text2 img2";
+    "img2 text2"
+    "img3 text3"
+    "img4 text4";
+    color:#900000;
+}
+#content img{
+    width:300px;
+    height:300px;
 }
 p{
     /* margin-top:588px;
@@ -116,4 +152,19 @@ p{
 }
 .bar_item:active{
     filter: brightness(120%);
+}
+a{
+    text-decoration:none;
+}
+#image3{
+    grid-area: img3;
+}
+#text3{
+    grid-area:text3;
+}
+#image4{
+    grid-area: img4;
+}
+#text4{
+    grid-area:text4;
 }
