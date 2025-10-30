@@ -32,7 +32,7 @@ nav{
     width:100%;
 }
 main{
-    background-image:url("../Assets/images/pizza_pie1-Photoroom.png");
+    background-image: url("../Assets/images/pizza_pie1-Photoroom.png");
     background-position: center;
     background-size: contain;
     display: flex;
