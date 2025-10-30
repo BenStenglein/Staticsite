@@ -13,7 +13,6 @@ header{
     width: 100%;
     text-align: center;
     margin:0px;
-
 }
 #logo{
     width:50px;
@@ -33,12 +32,11 @@ nav{
     width:100%;
 }
 main{
-    background-image:url("./Assets/images/pizza_pie1-Photoroom.png");
+    background-image:url("/Assets/images/pizza_pie1-Photoroom.png");
     background-position: center;
     background-size: contain;
     display: flex;
     justify-content: center;
-    
 }
 #image1{
     grid-area:img1;
